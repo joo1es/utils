@@ -11,6 +11,7 @@ it('should return an array of unique values with a key', () => {
     expect(unique([], 'id')).toEqual([])
     expect(unique([{ id: 1 }, { id: 1 }], 'id')).toEqual([{ id: 1 }])
     expect(unique([{ id: 3 }, { id: 1 }], 'id')).toEqual([{ id: 3 }, { id: 1 }])
+    expect(unique([[0, 1, 2], [0, 1, 3]], item => item[0])).toEqual([[0, 1, 3]])
 })
 
 it('should return an array of unique values with a key function', () => {
