@@ -9,6 +9,10 @@
   },
   "author": "jooies",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joo1es/utils"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "jest": "^27.5.1",
