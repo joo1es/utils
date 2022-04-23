@@ -1,0 +1,20 @@
+{
+  "name": "@oasis-end/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "release": "tsc && release-it",
+    "test": "jest ./src"
+  },
+  "author": "jooies",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "release-it": "^14.14.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
