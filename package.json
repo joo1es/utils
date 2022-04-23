@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "release": "tsc && release-it --access public",
+    "release": "tsc && release-it",
     "test": "jest ./src"
   },
   "author": "jooies",
