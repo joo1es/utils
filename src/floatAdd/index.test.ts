@@ -2,14 +2,8 @@ import { floatAdd } from ".";
 
 it('should add two positive numbers correctly',()=>{
     expect(floatAdd(0.1, 0.2)).toBe(0.3);
-})
-it('should add two positive numbers correctly',()=>{
     expect(floatAdd(0.01, 0.02)).toBe(0.03);
-})
-it('should add two positive numbers correctly',()=>{
     expect(floatAdd(1, 0.2)).toBe(1.2);
-})
-it('should add two positive numbers correctly',()=>{
     expect(floatAdd(1, 1)).toBe(2);
 })
 it('should add two negative numbers correctly',()=>{
