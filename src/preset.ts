@@ -1,5 +1,6 @@
 export default {
     '@oasis-end/utils': [
-        'unique'
+        'unique',
+        'treeMap'
     ]
 }

@@ -1,3 +1,6 @@
+/**
+ * High-performance array unique.
+ */
 export function unique<T>(array: T[]): T[]
 export function unique<
     T extends Record<keyof any, any>,
