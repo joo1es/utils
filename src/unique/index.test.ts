@@ -1,4 +1,4 @@
-import { unique } from "./unique"
+import { unique } from "."
 
 it('should return an array of unique values', () => {
     expect(unique([])).toEqual([])
