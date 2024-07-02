@@ -33,3 +33,7 @@ it('should add a zero and a negative number correctly',()=>{
     expect(floatAdd(0, -0.1)).toBe(-0.1);
     expect(floatAdd(0, -0.1, 0)).toBe(-0.1);
 })
+it('should be a number',()=>{
+    expect(floatAdd(0, NaN,Math.log(0))).toBe(0);
+    expect(floatAdd(Math.pow(10,1000), Math.log(0), -Math.pow(10,1000))).toBe(0);
+})
