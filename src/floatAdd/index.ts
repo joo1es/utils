@@ -1,6 +1,6 @@
 export function floatAdd(...nums: number[]): number {
     if (nums.length === 0) return 0
-    const maxDecimals = Math.max(...nums.map(countDecimals))
+    const maxDecimals = Math.max(...nums)
     const precision = 1 * Math.pow(10, maxDecimals)
     return nums.reduce((pre, cur) => {
         if (cur === undefined || !isFinite(cur) || isNaN(cur)) cur = 0
