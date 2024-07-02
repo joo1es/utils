@@ -34,12 +34,12 @@ it('should add a zero and a negative number correctly', () => {
     expect(floatAdd(0, -0.1, 0)).toBe(-0.1);
 })
 
-it('test countDecimals', () => {
+it('test countDecimals invaild', () => {
     expect(countDecimals(0.001)).toBe(3)
     expect(countDecimals(1)).toBe(0)
     expect(countDecimals(1e-5)).toBe(5)
     expect(countDecimals(1e-20)).toBe(20)
-    expect(countDecimals(1e+20)).toBe(20)
+    expect(countDecimals(1e+20)).toBe(0)
     expect(countDecimals(Infinity)).toBe(0)
     expect(countDecimals(NaN)).toBe(0)
     expect(countDecimals(-Infinity)).toBe(0)
