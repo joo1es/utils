@@ -1,4 +1,4 @@
-name: Test with Junit
+name: Test with unit
 
 on:
   pull_request:
