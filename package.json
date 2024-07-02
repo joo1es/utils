@@ -5,7 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "release": "tsc && release-it",
-    "test": "jest ./src"
+    "test": "jest ./src",
+    "docs:dev": "vitepress dev doc --port 3000",
+    "docs:build": "vitepress build doc",
+    "docs:preview": "vitepress preview doc"
   },
   "author": "jooies",
   "license": "MIT",
@@ -20,6 +23,7 @@
     "release-it": "^14.14.2",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "vitepress": "^1.2.3"
   }
 }
