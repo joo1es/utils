@@ -14,7 +14,7 @@ export function countDecimals(num: number) {
     const numString = num.toString()
     if (numString.includes('e')) {
         const decimals = Number(numString.split('e')[1])
-        return decimals < 0 ? - decimals : 0
+        return decimals < 0 ? -decimals : 0
     } else {
         return num.toString().split('.')[1]?.length || 0
     }
