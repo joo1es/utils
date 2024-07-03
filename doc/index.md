@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "@oasis-end/utils"
-  text: "Some common tool classes.The end of the oasis is still an oasis."
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  name: "Oasis-end"
+  tagline: The end of the oasis is still an oasis.
+  text: "utils"
+  # actions:
+  #   - theme: brand
+  #     text: Markdown Examples
+  #     link: /markdown-examples
+  #   - theme: alt
+  #     text: API Examples
+  #     link: /api-examples
 
 features:
   - title: Feature A

@@ -22,3 +22,6 @@ vetur
 site
 changelog.generated.md
 yarn-error.log
+
+# vitepress
+doc/.vitepress/cache/
