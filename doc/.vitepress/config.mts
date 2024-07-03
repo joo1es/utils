@@ -1,28 +1,32 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lang: 'zh-CN',
   title: "@oasis-end/utils",
-  description: "Some common tool classes.The end of the oasis is still an oasis.",
+  description: "The end of the oasis is still an oasis.",
+  head: [
+    ['link', { rel: 'icon',type: "image/png", href: '/image/logo-sub.png' }]
+  ],
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/image/logo-sub.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '指南', link: '/quick-start' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        text: '快速上手',
+        link: '/quick-start'
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present Evan You'
+    }
   }
 })

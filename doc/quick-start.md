@@ -1,10 +1,12 @@
-# Markdown Extension Examples
+# 快速上手
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+本节将介绍如何在项目中使用 @oasis-end/utils。
 
-## Syntax Highlighting
+## 版本
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+@oasis-end/utils 目前还处于快速开发迭代中。
+
+[Shiki](https://github.com/joo1es/utils)
 
 **Input**
 
