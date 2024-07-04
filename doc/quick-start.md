@@ -6,82 +6,98 @@
 
 @oasis-end/utils 目前还处于快速开发迭代中。
 
-[Shiki](https://github.com/joo1es/utils)
+[![An image](./image/share.svg)](https://github.com/joo1es/utils)
 
-**Input**
 
+**使用包管理器安装**
+
+我们建议您使用包管理器（如 NPM、Yarn 或 pnpm）安装 @oasis-end/utils。
 ````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+# 选择一个你喜欢的包管理器
+
+# NPM
+$ npm install @oasis-end/utils -w --save
+
+# Yarn
+$ yarn add @oasis-end/utils -w
+
+# pnpm
+$ pnpm i @oasis-end/utils -w
 ````
 
-**Output**
+如果您的网络环境不好，建议使用相关镜像服务例如 [npm-cnpm](https://github.com/cnpm/cnpm) 等。
+```
+npm config set registry http://mirrors.cloud.tencent.com/npm/
+```
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
+## 用法
+
+**完整引入**
+
+如果你对打包后的文件大小不是很在乎，那么使用完整导入会更方便。
+```ts
+// main.ts
+import { createApp } from 'vue'
+import oasisEnd from '@oasis-end/utils'
+import App from './App.vue'
+
+const app = createApp(App)
+
+app.use(oasisEnd)
+app.mount('#app')
+```
+
+**按需导入**
+
+您需要使用额外的插件来导入要使用的组件。
+###### 自动导入 ![An image](./image/recommend.svg)
+```
+npm install unplugin-auto-import -D
+```
+然后把下列代码插入到你的 Vite 或 Webpack 的配置文件中
+
+**vite**
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+
+export default defineConfig({
+  // ...
+  plugins: [
+    // ...
+    AutoImport({
+      imports: ['@oasis-end/utils'],
+    }),
+  ],
+})
+```
+**Webpack**
+```ts
+// webpack.config.js
+const AutoImport = require('unplugin-auto-import/webpack')
+
+module.exports = {
+  // ...
+  plugins: [
+    AutoImport({
+      imports: ['@oasis-end/utils'],
+    }),
+  ],
 }
 ```
 
-## Custom Containers
+###### 手动导入
 
-**Input**
+@oasis-end/utils 提供了基于 ES Module 的开箱即用的 [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)  功能。
+```
+// APP.ts
+import { treeMap } from '@oasis-end/utils'
 
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
+treeMap({})
 ```
 
-**Output**
 
-::: info
-This is an info box.
-:::
+## 开始使用
 
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+现在你可以启动项目了。 对于每个组件的用法，请查阅 [对应的独立文档](/api-examples)。
