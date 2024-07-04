@@ -7,7 +7,7 @@ hero:
   # text: "utils"
   tagline: The end of the oasis is still an oasis.
   image: 
-    src: /image/logo.svg
+    src: /utils/image/logo.svg
     alt: 网页的logo图标
    
   actions:

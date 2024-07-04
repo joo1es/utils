@@ -6,10 +6,10 @@ export default defineConfig({
   title: "@oasis-end/utils",
   description: "The end of the oasis is still an oasis.",
   head: [
-    ['link', { rel: 'icon',type: "image/png", href: './image/logo-sub.png' }]
+    ['link', { rel: 'icon',type: "image/png", href: '/utils/image/logo-sub.png' }]
   ],
   themeConfig: {
-    logo: '/image/logo-sub.png',
+    logo: '/utils/image/logo-sub.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/quick-start' }
@@ -23,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/joo1es/utils' }
     ],
     footer: {
       message: 'Released under the MIT License.',
