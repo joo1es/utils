@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/utils/',
   lang: 'zh-CN',
   title: "@oasis-end/utils",
   description: "The end of the oasis is still an oasis.",
