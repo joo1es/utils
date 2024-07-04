@@ -6,23 +6,23 @@
 
 @oasis-end/utils 目前还处于快速开发迭代中。
 
-[![An image](./image/share.svg)](https://github.com/joo1es/utils)
+[![An image](/image/share.svg)](https://github.com/joo1es/utils)
 
 
 **使用包管理器安装**
 
 我们建议您使用包管理器（如 NPM、Yarn 或 pnpm）安装 @oasis-end/utils。
-````md
+````
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install @oasis-end/utils -w --save
+$ npm install @oasis-end/utils  --save --global
 
 # Yarn
-$ yarn add @oasis-end/utils -w
+$ yarn add @oasis-end/utils --save --global
 
 # pnpm
-$ pnpm i @oasis-end/utils -w
+$ pnpm i @oasis-end/utils --save --global
 ````
 
 如果您的网络环境不好，建议使用相关镜像服务例如 [npm-cnpm](https://github.com/cnpm/cnpm) 等。
@@ -38,19 +38,18 @@ npm config set registry http://mirrors.cloud.tencent.com/npm/
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import oasisEnd from '@oasis-end/utils'
+import utilsPreset from '@oasis-end/utils/preset'
 import App from './App.vue'
 
 const app = createApp(App)
 
-app.use(oasisEnd)
 app.mount('#app')
 ```
 
 **按需导入**
 
 您需要使用额外的插件来导入要使用的组件。
-###### 自动导入 ![An image](./image/recommend.svg)
+###### <div class="auto-import">自动导入 ![An image](/image/recommend.svg)</div>
 ```
 npm install unplugin-auto-import -D
 ```
@@ -90,7 +89,7 @@ module.exports = {
 ###### 手动导入
 
 @oasis-end/utils 提供了基于 ES Module 的开箱即用的 [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)  功能。
-```
+```ts
 // APP.ts
 import { treeMap } from '@oasis-end/utils'
 

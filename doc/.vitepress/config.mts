@@ -6,7 +6,7 @@ export default defineConfig({
   title: "@oasis-end/utils",
   description: "The end of the oasis is still an oasis.",
   head: [
-    ['link', { rel: 'icon',type: "image/png", href: '/image/logo-sub.png' }]
+    ['link', { rel: 'icon',type: "image/png", href: './image/logo-sub.png' }]
   ],
   themeConfig: {
     logo: '/image/logo-sub.png',

@@ -14,10 +14,7 @@
 }
 
 h1 {
-    background: -webkit-linear-gradient(-45deg, #e43498 5%, #5ad7dd 15%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #00a381;
 }
 
 .vp-doc a {
@@ -46,4 +43,8 @@ h1 {
     background-color: var(--vp-badge-danger-bg);
     position: relative;
     border-left: 4px solid #e95f59;
+}
+
+.auto-import {
+    display: flex;
 }
