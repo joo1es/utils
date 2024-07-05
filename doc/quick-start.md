@@ -12,7 +12,7 @@
 **使用包管理器安装**
 
 我们建议您使用包管理器（如 NPM、Yarn 或 pnpm）安装 @oasis-end/utils。
-````
+````sh
 # 选择一个你喜欢的包管理器
 
 # NPM
@@ -26,7 +26,7 @@ $ pnpm i @oasis-end/utils --save --global
 ````
 
 如果您的网络环境不好，建议使用相关镜像服务例如 [npm-cnpm](https://github.com/cnpm/cnpm) 等。
-```
+```sh
 npm config set registry http://mirrors.cloud.tencent.com/npm/
 ```
 
@@ -50,7 +50,7 @@ app.mount('#app')
 
 您需要使用额外的插件来导入要使用的组件。
 ###### <div class="auto-import">自动导入 ![An image](/image/recommend.svg)</div>
-```
+```sh
 npm install unplugin-auto-import -D
 ```
 然后把下列代码插入到你的 Vite 或 Webpack 的配置文件中
