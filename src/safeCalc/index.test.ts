@@ -6,6 +6,8 @@ it('should correctly use String and TemplateStringsArray', () => {
     expect(safeCalc('-0.1 + 0.2', 0.2)).toBe(0.3)
     expect(safeCalc('0.01 + 0.02')).toBe(0.03)
     expect(safeCalc('0.01 + 0.02 - 0.01')).toBe(0.01)
+    expect(safeCalc(0.01, '0.02 - 0.01')).toBe(0.01)
+    expect(safeCalc(0.01, '0.02 - 0.01', 0)).toBe(0.01)
     expect(safeCalc('(0.01 + 0.02 - 0.01) * 5')).toBe(0.05)
     expect(safeCalc('(0.01 + 0.02 - 0.01) * 5 / 5', .5, .5)).toBe(1.01)
     expect(safeCalc(safeCalc`0.1 + 0.2`, .2)).toBe(0.5)
