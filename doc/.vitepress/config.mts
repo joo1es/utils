@@ -12,13 +12,28 @@ export default defineConfig({
     logo: '/utils/image/logo-sub.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/quick-start' }
+      { text: '指南', link: '/quick-start' },
+      { text: '函数', link: '/function' }
     ],
 
     sidebar: [
       {
         text: '快速上手',
         link: '/quick-start'
+      },
+      {
+        text: '函数',
+        items: [
+          {
+            text: 'Number',
+            items: [
+              {
+                text: 'safeCalc 安全计算',
+                link: '/function/number/safeCalc',
+              }
+            ]
+          },
+        ]
       }
     ],
 
