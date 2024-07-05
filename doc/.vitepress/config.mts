@@ -9,7 +9,7 @@ export default defineConfig({
     ['link', { rel: 'icon',type: "image/png", href: '/utils/image/logo-sub.png' }]
   ],
   themeConfig: {
-    logo: '/utils/image/logo-sub.png',
+    logo: '/image/logo-sub.png',
     nav: [
       { text: '首页', link: '/' },
       { text: '指南', link: '/quick-start' },
