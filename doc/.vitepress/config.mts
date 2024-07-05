@@ -34,10 +34,6 @@ export default defineConfig({
                 text: 'floatAdd 浮点相加',
                 link: '/function/number/floatAdd',
               },
-              {
-                text: 'safeCalc 安全计算',
-                link: '/function/number/safeCalc',
-              },
             ]
           },
         ]
