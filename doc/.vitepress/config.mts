@@ -9,16 +9,34 @@ export default defineConfig({
     ['link', { rel: 'icon',type: "image/png", href: '/utils/image/logo-sub.png' }]
   ],
   themeConfig: {
-    logo: '/utils/image/logo-sub.png',
+    logo: '/image/logo-sub.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/quick-start' }
+      { text: '指南', link: '/quick-start' },
     ],
 
     sidebar: [
       {
         text: '快速上手',
         link: '/quick-start'
+      },
+      {
+        text: '函数',
+        items: [
+          {
+            text: 'Number',
+            items: [
+              {
+                text: 'countDecimals 计算小数位数',
+                link: '/function/number/countDecimals',
+              },
+              {
+                text: 'floatAdd 浮点相加',
+                link: '/function/number/floatAdd',
+              },
+            ]
+          },
+        ]
       }
     ],
 
