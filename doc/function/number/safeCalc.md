@@ -9,7 +9,7 @@ outline: deep
 ## 函数定义
 
 ```typescript
-safeCalc(...calcValues: (number | string | TemplateStringsArray)[])
+function safeCalc(...calcValues: (number | string | TemplateStringsArray)[]): number
 ```
 
 ### 参数
