@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# countDecimals 计算小数位数
+# countDecimals 小数位数
 
 获取一个数字的小数位数。
 

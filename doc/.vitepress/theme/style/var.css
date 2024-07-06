@@ -48,3 +48,11 @@ h1 {
 .auto-import {
     display: flex;
 }
+
+.vp-doc h1 {
+    letter-spacing: .05em;
+}
+
+.VPSidebarItem {
+    letter-spacing: .05em;
+}
