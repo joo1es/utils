@@ -27,12 +27,30 @@ export default defineConfig({
             text: 'Number',
             items: [
               {
-                text: 'countDecimals 计算小数位数',
+                text: 'countDecimals 小数位数',
                 link: '/function/number/countDecimals',
               },
               {
                 text: 'floatAdd 浮点相加',
                 link: '/function/number/floatAdd',
+              },
+            ]
+          },
+          {
+            text: 'Array',
+            items: [
+              {
+                text: 'unique 去重',
+                link: '/function/array/unique',
+              },
+            ]
+          },
+          {
+            text: 'Tree',
+            items: [
+              {
+                text: 'treeMap 树形映射',
+                link: '/function/tree/treeMap',
               },
             ]
           },

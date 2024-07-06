@@ -1,5 +1,7 @@
 The end of the oasis is still an oasis. There are some useful utils.
 
+[Docs](https://joo1es.github.io/utils/)
+
 ## floatAdd
 
 Avoiding precision problems when adding float numbers.
