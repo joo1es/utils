@@ -1,4 +1,4 @@
-export default {
+export const oasisEndUtilsPresets = {
     '@oasis-end/utils': [
         'unique',
         'treeMap',
