@@ -60,13 +60,16 @@ npm install unplugin-auto-import -D
 // vite.config.ts
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import { oasisEndUtilsPresets } from '@oasis-end/utils/dist/preset'
 
 export default defineConfig({
   // ...
   plugins: [
     // ...
     AutoImport({
-      imports: ['@oasis-end/utils'],
+      imports: [
+        oasisEndUtilsPresets
+      ],
     }),
   ],
 })
@@ -74,13 +77,15 @@ export default defineConfig({
 **Webpack**
 ```ts
 // webpack.config.js
-const AutoImport = require('unplugin-auto-import/webpack')
+const { oasisEndUtilsPresets } = require('@oasis-end/utils/dist/preset')
 
 module.exports = {
   // ...
   plugins: [
     AutoImport({
-      imports: ['@oasis-end/utils'],
+      imports: [
+        oasisEndUtilsPresets
+      ],
     }),
   ],
 }
