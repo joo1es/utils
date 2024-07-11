@@ -3,6 +3,7 @@ export const oasisEndUtilsPresets = {
         'unique',
         'treeMap',
         'floatAdd',
-        'countDecimals'
+        'countDecimals',
+        'lengthOf'
     ]
 }
