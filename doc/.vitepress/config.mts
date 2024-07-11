@@ -37,6 +37,15 @@ export default defineConfig({
             ]
           },
           {
+            text: 'String',
+            items: [
+              {
+                text: 'getLength 获取长度',
+                link: '/function/string/getLength',
+              },
+            ]
+          },
+          {
             text: 'Array',
             items: [
               {
