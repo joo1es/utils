@@ -2,14 +2,14 @@
 outline: deep
 ---
 
-# getLength 获取长度
+# lengthOf 获取长度
 
 正确的获取字符串的长度。
 
 ## 函数定义
 
 ```typescript
-function getLength(value: string | any[] | Set<any> | Map<any, any>): number
+function lengthOf(value: string | any[] | Set<any> | Map<any, any>): number
 ```
 
 ### 参数
@@ -25,9 +25,9 @@ function getLength(value: string | any[] | Set<any> | Map<any, any>): number
 ## 例子
 
 ```ts
-import { getLength } from '@oasis-end/utils'
+import { lengthOf } from '@oasis-end/utils'
 
 '😂'.length // 2
-getLength('😂') // 1
+lengthOf('😂') // 1
 ```
 

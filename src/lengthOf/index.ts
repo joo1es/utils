@@ -1,4 +1,4 @@
-export function getLength(value: string | any[] | Set<any> | Map<any, any>): number {
+export function lengthOf(value: string | any[] | Set<any> | Map<any, any>): number {
     if (Array.isArray(value)) {
         return value.length
     } else if (value instanceof Set || value instanceof Map) {
