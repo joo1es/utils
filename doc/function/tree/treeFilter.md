@@ -26,7 +26,7 @@ function treeFilter<T extends Record<keyof any, any>>(
 
 比较函数
 
-`options` `{ childrenField?: string, clearEmptyChildren: boolean }` `可选`
+`options` `{ childrenField?: string, clearEmptyChildren?: boolean }` `可选`
 
 配置项，childrenField 为子节点字段，clearEmptyChildren 为是否清理长度为空的 children
 

@@ -12,7 +12,7 @@ outline: deep
 function treeSort<T extends Record<keyof any, any>>(
     tree: T[],
     compareFn?: (a: T, b: T) => number,
-    options?: { childrenField: string }
+    options?: { childrenField?: string }
 ): T[]
 ```
 
