@@ -4,6 +4,7 @@ export const oasisEndUtilsPresets = {
         'treeMap',
         'floatAdd',
         'countDecimals',
-        'lengthOf'
+        'lengthOf',
+        'treeSort'
     ]
 }
