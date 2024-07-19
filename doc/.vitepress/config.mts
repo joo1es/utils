@@ -65,6 +65,10 @@ export default defineConfig({
                 text: 'treeSort 树形排序',
                 link: '/function/tree/treeSort',
               },
+              {
+                text: 'treeFilter 树形筛选',
+                link: '/function/tree/treeFilter',
+              },
             ]
           },
         ]
