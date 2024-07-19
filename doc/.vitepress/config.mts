@@ -61,6 +61,10 @@ export default defineConfig({
                 text: 'treeMap 树形映射',
                 link: '/function/tree/treeMap',
               },
+              {
+                text: 'treeSort 树形排序',
+                link: '/function/tree/treeSort',
+              },
             ]
           },
         ]
